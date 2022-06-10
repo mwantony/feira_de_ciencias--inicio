@@ -1,0 +1,118 @@
+@import 'styles/_variaveis.scss';
+
+
+.cabecalho {
+  background-image: url('../../assets/img/celular.png');
+  height: calc(100vh - 50px);
+  background-position: 50% bottom;
+  background-repeat: no-repeat;
+  &__div {
+    position: absolute;
+    left: 50%;
+    top: 15%;
+    transform: translate(-50%);
+    width: 200px;
+    margin: 4rem auto;
+    text-align: center;
+  }
+  &__titulo {
+    font-size: 1.2rem;
+    text-align: center;
+    line-height: 1.7rem;
+    color: $surface;
+    text-shadow: 0px 2px 4px $text-shadow;
+  }
+}
+.botaoaplicativo__div {
+  margin: 2rem auto;
+  width: 120px;
+}
+
+
+.baixar__aplicativo {
+  width: 120px;
+  text-shadow: 0px 2px 4px $text-shadow;
+  padding: .6rem 1.2rem;
+  background-color: $negativo;
+  border: none;
+  border-radius: 2px;
+  font-weight: 800;
+  color: $tema-principal;
+  box-shadow: 0px 2px 4px $text-shadow;
+}
+
+.planilha {
+  margin-top: -2.1%;
+  background-image: url('../../assets/img/background-topo--mobile.png');
+  min-height: 226px;
+  height: 60vw;
+  width: 100%;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  &__titulo {
+    color: $tema-principal;
+    text-shadow: 0px 2px 4px $text-shadow;
+    text-align: center;
+    line-height: 1.3rem;
+  }
+
+}
+
+.planilha__divtitulo {
+  position: absolute;
+  left: 50%;
+  margin-top: 15%;
+  transform: translate(-50%);
+  width: 70%;
+}
+
+.planilha__divbotao {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  margin-top: 30%;
+}
+
+.baixar__planilha {
+  border: none;
+  background-color: $negativo;
+  padding: .6rem 1.2rem;  
+  color: $tema-principal;
+  font-weight: 800;
+  border-radius: 2px;
+  text-shadow: 0px 2px 4px $text-shadow;
+  box-shadow: 0px 2px 4px $text-shadow;
+}
+
+.porqueusar {
+  padding: 2rem 1rem;
+  &__titulo {
+    color: $positivo;
+    font-size: 1.1rem;
+    text-shadow: 0px 2px 4px $text-shadow;
+
+  }
+  &__paragraph {
+    color: $surface;
+    font-weight: 400;
+    font-size: 14px;
+    text-indent: 30px;
+    margin: 1rem;
+    text-align: justify;
+    text-shadow: 0px 2px 4px $text-shadow;
+    line-height: 1.3rem;
+  }
+}
+
+.rodape {
+  background-image: url('../../assets/img/background-bottom--mobile.png');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  min-height: 226px;
+  height: 60vw;
+  background-size: 100%;
+  &__imagem {
+    width: 30%;
+  }
+}
