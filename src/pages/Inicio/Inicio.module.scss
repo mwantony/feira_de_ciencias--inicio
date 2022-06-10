@@ -112,7 +112,22 @@
   min-height: 226px;
   height: 60vw;
   background-size: 100%;
+  &__content {
+    left: 50%;
+    margin-top: 20%;
+    height: 30vh;
+    text-align: center;
+    transform: translate(-50%);
+    position: absolute;
+    width: 70%;
+  }
   &__imagem {
     width: 30%;
+  }
+  &__paragraph {
+    font-size: 14px;
+    font-weight: 400;
+    color: $tema-principal;
+    text-shadow: 0px 2px 4px $text-shadow;
   }
 }
