@@ -2,9 +2,11 @@
 
 
 .cabecalho {
-  background-image: url('../../assets/img/celular.png');
+  background-image: url('../../assets/img/celularcompleto.png');
   height: calc(100vh - 50px);
-  background-position: 50% bottom;
+  z-index: -2;
+  background-size: 200px;
+  background-position: 50% 125%;
   background-repeat: no-repeat;
   &__div {
     position: absolute;
@@ -21,6 +23,14 @@
     line-height: 1.7rem;
     color: $surface;
     text-shadow: 0px 2px 4px $text-shadow;
+  }
+  &__imagem {
+    z-index: -1;
+    bottom: -4rem;
+    left: 50%;
+    transform: translate(-50%);
+    position: absolute;
+    width: 179px;
   }
 }
 .botaoaplicativo__div {
@@ -113,9 +123,13 @@
   height: 60vw;
   background-size: 100%;
   &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
     left: 50%;
     margin-top: 20%;
-    height: 30vh;
+    height: 20%;
     text-align: center;
     transform: translate(-50%);
     position: absolute;
@@ -129,5 +143,70 @@
     font-weight: 400;
     color: $tema-principal;
     text-shadow: 0px 2px 4px $text-shadow;
+  }
+}
+
+@media(min-width: $media550) {
+  .planilha {
+    &__titulo {
+      font-size: 1.3rem;
+    }
+  }
+  .porqueusar {
+    padding: 3rem;
+    margin: 0 auto;
+    width: 70%;
+    &__titulo {
+      margin-bottom: 2rem;
+      font-size: 1.3rem;
+    }
+    &__paragraph {
+      margin-top: 1.5rem;
+      font-size: 1rem;
+    }
+  }
+  .rodape {
+    &__content {
+      margin-top: 15%;
+      height: 30%;
+    }
+  }
+  .baixar__planilha {
+    font-size: 1.3rem;
+    border-radius: 5px;
+  }
+}
+@media(min-width: $media) {
+
+  .planilha {
+    background-image: url('../../assets/img/background-topo--desktop.png');
+    height: 30vw;
+    margin-top: 0;
+  }
+  .planilha__divtitulo {
+    margin-top: 8%;
+    width: 30%;
+  }
+  .planilha__divbotao {
+    margin-top: 14%;
+  }
+  .porqueusar {
+    width: 60%;
+  }
+  .rodape {
+    background-image: url('../../assets/img/background-bottom-desktop.png');
+    height: 30vw;
+    &__content {
+      height: 20%;
+      margin-top: 12vw;
+      flex-direction: row;
+    }
+    &__imagem {
+      width: 20%
+    }
+    &__paragraph {
+      font-size: 16px;
+      width: 40%;
+    }
   }
 }
