@@ -2,7 +2,7 @@
 
 
 .cabecalho {
-  height: calc(100vh - 50px);
+  height: calc(100vh - 60px);
   z-index: -2;
 
   &__div {
@@ -43,7 +43,6 @@
 .planilha {
   position: relative;
   z-index: 1;
-  margin-top: -2.1%;
   background-image: url('../../assets/img/background-topo--mobile.png');
   min-height: 226px;
   height: 60vw;
@@ -103,6 +102,8 @@
 
 .porqueusar {
   padding: 2rem 1rem;
+  width: 80%;
+  margin: 0 auto;
   &__titulo {
     color: $positivo;
     font-size: 1.1rem;
