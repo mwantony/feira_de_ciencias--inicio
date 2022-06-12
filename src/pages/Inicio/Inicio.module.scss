@@ -2,35 +2,24 @@
 
 
 .cabecalho {
-  background-image: url('../../assets/img/celularcompleto.png');
   height: calc(100vh - 50px);
   z-index: -2;
-  background-size: 200px;
-  background-position: 50% 125%;
-  background-repeat: no-repeat;
+
   &__div {
     position: absolute;
     left: 50%;
     top: 15%;
     transform: translate(-50%);
     width: 200px;
-    margin: 4rem auto;
+    margin: 2rem auto;
     text-align: center;
   }
-  &__titulo {
+  &__titulo--mobile {
     font-size: 1.2rem;
     text-align: center;
     line-height: 1.7rem;
     color: $surface;
     text-shadow: 0px 2px 4px $text-shadow;
-  }
-  &__imagem {
-    z-index: -1;
-    bottom: -4rem;
-    left: 50%;
-    transform: translate(-50%);
-    position: absolute;
-    width: 179px;
   }
 }
 .botaoaplicativo__div {
@@ -52,6 +41,8 @@
 }
 
 .planilha {
+  position: relative;
+  z-index: 1;
   margin-top: -2.1%;
   background-image: url('../../assets/img/background-topo--mobile.png');
   min-height: 226px;
@@ -75,6 +66,21 @@
   margin-top: 15%;
   transform: translate(-50%);
   width: 70%;
+}
+
+.video__div--mobile {
+  z-index: -2;
+  left: 50%;
+  transform: translate(-50%);
+  position: absolute;
+  width: 100%;
+}
+
+.video__mobile {
+  display: block;
+  position: absolute;
+  z-index: -2;
+  width: 100%;
 }
 
 .planilha__divbotao {
@@ -177,7 +183,11 @@
   }
 }
 @media(min-width: $media) {
-
+  .cabecalho {
+    &__titulo--mobile, .baixar__aplicativo, .video__mobile, .video__div--mobile {
+      display: none;
+    }
+  }
   .planilha {
     background-image: url('../../assets/img/background-topo--desktop.png');
     height: 30vw;
@@ -191,10 +201,19 @@
     margin-top: 14%;
   }
   .porqueusar {
-    width: 60%;
+    padding: 5rem;
+    width: 50%;
+    &__titulo {
+      font-size: 1.7rem;
+    }
+    &__paragraph {
+      font-size: 1.2rem;
+      line-height: 2rem;
+    }
   }
   .rodape {
     background-image: url('../../assets/img/background-bottom-desktop.png');
+    background-position: 0% 250%;
     height: 30vw;
     &__content {
       height: 20%;
@@ -207,6 +226,14 @@
     &__paragraph {
       font-size: 16px;
       width: 40%;
+    }
+  }
+}
+
+@media(min-width: 1025px) {
+  .rodape {
+    &__content {
+      margin-top: 15vw;
     }
   }
 }

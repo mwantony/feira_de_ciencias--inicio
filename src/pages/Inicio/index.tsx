@@ -1,15 +1,23 @@
 import { Link } from "react-router-dom";
 import styles from "./Inicio.module.scss";
 import logorodape from 'assets/img/logoarredondadamenor.png'
+import videoMobile from 'assets/vid/vidmobile.mp4';
 export default function Inicio() {
   return (
-    <>
+    <main>
       <header className={styles.cabecalho}>
         <div className={styles.cabecalho__div}>
-          <h2 className={styles.cabecalho__titulo}>Baixe o aplicativo para celular</h2>
+          <h2 className={styles['cabecalho__titulo--mobile']}>Baixe o aplicativo para celular</h2>
           <div className={styles.botaoaplicativo__div}>
             <Link to={'/downloads'}><button className={styles.baixar__aplicativo}>Download</button></Link>
           </div>
+          <div className={styles['video__div--mobile']}>
+            <video className={styles.video__mobile} loop muted autoPlay>
+              <source src={videoMobile}/>
+            </video>
+          </div>
+        </div>
+        <div>
         </div>
       </header>
       <section className={styles.planilha}>
@@ -31,6 +39,6 @@ export default function Inicio() {
           <p className={styles.rodape__paragraph}>Criado como projeto da Feira de Ciências 2022</p>
         </figure>
       </footer>
-    </>
+    </main>
   );
 }
