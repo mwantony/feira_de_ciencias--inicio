@@ -2,7 +2,7 @@
 
 
 .cabecalho {
-  height: calc(100vh - 60px);
+  min-height: calc(100vh - 50px);
   z-index: -2;
 
   &__div {
@@ -39,6 +39,10 @@
   color: $tema-principal;
   box-shadow: 0px 2px 4px $text-shadow;
 }
+.titulo__desktop {
+  display: none;
+}
+
 
 .planilha {
   position: relative;
@@ -80,6 +84,15 @@
   position: absolute;
   z-index: -2;
   width: 100%;
+}
+.video__div--desktop {
+  display: none;
+}
+.video__desktop {
+  display: none;
+}
+.logo__desktop {
+  display: none;
 }
 
 .planilha__divbotao {
@@ -154,6 +167,7 @@
 }
 
 @media(min-width: $media550) {
+
   .planilha {
     &__titulo {
       font-size: 1.3rem;
@@ -185,14 +199,56 @@
 }
 @media(min-width: $media) {
   .cabecalho {
+    height: calc(100vh - 50px);
     &__titulo--mobile, .baixar__aplicativo, .video__mobile, .video__div--mobile {
       display: none;
     }
+    &__div {
+      position: static;
+      display: flex;
+    }
+  }
+  .titulo__desktop {
+    text-align: justify;
+    position: absolute;
+    bottom: 18vw;
+    left: 7%;
+    display: block;
+    width: 27vw;
+  }
+  .titulo__paragraph {
+    text-align: justify;
+    font-size: 1.1rem;
+    text-indent: 30px;
+    word-wrap: break-word;
+    line-height: 1.5rem;
+    color: $surface;
+    text-shadow: 0px 2px 4px $text-shadow;
+
+  }
+  .video__div--desktop {
+    position: absolute;
+    z-index: -2;
+    display: block;
+    left: 6.5rem;
+    width: 60vw;
+    bottom: -32rem;
+  }
+  .video__desktop {
+    display: block;
+    width: 100%;
+  }
+  .logo__desktop {
+    width: 20vw;
+    left: 10vw;
+    bottom: 35vw;
+    position: absolute;
+    display: block;
   }
   .planilha {
     background-image: url('../../assets/img/background-topo--desktop.png');
     height: 30vw;
-    margin-top: 0;
+    margin-top: -2rem;
   }
   .planilha__divtitulo {
     margin-top: 8%;
