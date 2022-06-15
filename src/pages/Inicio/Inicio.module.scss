@@ -198,6 +198,7 @@
   }
 }
 @media(min-width: $media) {
+
   .cabecalho {
     height: calc(100vh - 50px);
     &__titulo--mobile, .baixar__aplicativo, .video__mobile, .video__div--mobile {
@@ -215,17 +216,21 @@
     left: 7%;
     display: block;
     width: 27vw;
+    overflow: hidden;
+    animation: typing 6s 1s alternate ease-in-out infinite;
   }
   .titulo__paragraph {
+    overflow: hidden;
     text-align: justify;
     font-size: 1.1rem;
-    text-indent: 30px;
     word-wrap: break-word;
+    text-indent: 30px;
     line-height: 1.5rem;
     color: $surface;
     text-shadow: 0px 2px 4px $text-shadow;
-
+  
   }
+
   .video__div--desktop {
     position: absolute;
     z-index: -2;

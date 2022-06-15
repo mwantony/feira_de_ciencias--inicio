@@ -4,6 +4,7 @@ import logorodape from "assets/img/logoarredondadamenor.png";
 import logoDesktop from 'assets/img/logoarredondadamenor.png'
 import videoMobile from "assets/vid/vidmobile.mp4";
 import videoDesktop from "assets/vid/viddesktop.mp4";
+import { style } from "@mui/system";
 export default function Inicio() {
   return (
     <main>

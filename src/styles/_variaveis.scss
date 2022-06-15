@@ -7,3 +7,16 @@ $positivo: #008B0E;
 $negativo: #CC0000;
 $media: 767px;
 $media550: 550px;
+$font-size: 40px;
+$letter-spacing: 0.0625em; //This counts for 1px on 16px font;
+$letter-count: 20; //Number of letters in text !important
+$transition-time: 3s; //Typing speed
+$bg-color: #eff5ed;
+$mask-color: #eff5ed; //Change it to see how this works :)
+$font-color: #152860;
+
+$letter-size: calc(1ch + #{$letter-spacing});
+$cursor-width: 1px; //Change this to $letter-size if you want Insert:active effect
+//--
+$cursor-blink-duration: $letter-count;
+$font-width: calc(#{$letter-count}ch + #{$letter-count}*#{$letter-spacing});
