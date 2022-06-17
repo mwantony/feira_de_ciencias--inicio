@@ -229,7 +229,7 @@
   }
   .titulo__paragraph1 {
     animation: p1 2s forwards;
-    animation-timing-function: steps(200, jump-none);
+    animation-timing-function: steps(1000, jump-none);
     animation-delay: 1s;
     width: 0;
     white-space: nowrap;
@@ -238,7 +238,7 @@
   }
   .titulo__paragraph2 {
     animation: p2 1.7s forwards;
-    animation-timing-function: steps(200, jump-none);
+    animation-timing-function: steps(1000, jump-none);
     animation-timing-function: none;
     width: 0;
     animation-delay: 2.9s;
@@ -248,7 +248,7 @@
   .titulo__paragraph3 {
     animation: p3 1.2s forwards;
     width: 0;
-    animation-timing-function: steps(200, jump-none);
+    animation-timing-function: steps(1000, jump-none);
     animation-delay: 4.5s;
     overflow-x: hidden;
     white-space: nowrap;
