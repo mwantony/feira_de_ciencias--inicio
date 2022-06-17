@@ -4,6 +4,7 @@ import logorodape from "assets/img/logoarredondadamenor.png";
 import logoDesktop from 'assets/img/logoarredondadamenor.png'
 import videoMobile from "assets/vid/vidmobile.mp4";
 import videoDesktop from "assets/vid/viddesktop.mp4";
+import classNames from "classnames";
 export default function Inicio() {
   return (
     <main>
@@ -30,7 +31,24 @@ export default function Inicio() {
         </div>
         <img className={styles.logo__desktop} src={logoDesktop} alt="Logo do HiCash" />
         <div className={styles.titulo__desktop}>
-          <p className={styles.titulo__paragraph}>Controlar o seu dinheiro nunca foi tão fácil, utilize o HiCash, e tenha domínio sobre seu patrimônio.</p>
+          <p className={classNames({
+            [styles.titulo__paragraph]: true,
+            [styles.titulo__paragraph1]: true,
+          })}>
+            Controlar o seu dinheiro nunca foi tão
+          </p>
+          <p className={classNames({
+            [styles.titulo__paragraph]: true,
+            [styles.titulo__paragraph2]: true,
+          })}>
+            fácil, utilize o HiCash, e tenha domínio
+          </p>
+          <p className={classNames({
+            [styles.titulo__paragraph]: true,
+            [styles.titulo__paragraph3]: true,
+          })}>
+            sobre seu patrimônio.
+          </p>
         </div>
       </header>
       <div>

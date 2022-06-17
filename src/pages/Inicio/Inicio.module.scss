@@ -209,22 +209,70 @@
     }
   }
   .titulo__desktop {
-    text-align: justify;
     position: absolute;
     bottom: 18vw;
+    width: 30vw;
     left: 7%;
     display: block;
-    width: 27vw;
   }
   .titulo__paragraph {
     text-align: justify;
-    font-size: 1.1rem;
-    text-indent: 30px;
+    height: 1.8vw;
+    display: flex;
+    align-items: center;
+    font-size: 1.4vw;
+    overflow: hidden;
     word-wrap: break-word;
     line-height: 1.5rem;
     color: $surface;
     text-shadow: 0px 2px 4px $text-shadow;
-
+  }
+  .titulo__paragraph1 {
+    animation: p1 2s forwards;
+    animation-timing-function: steps(200, jump-none);
+    animation-delay: 1s;
+    width: 0;
+    white-space: nowrap;
+    text-indent: 30px;
+    overflow-x: hidden;
+  }
+  .titulo__paragraph2 {
+    animation: p2 1.7s forwards;
+    animation-timing-function: steps(200, jump-none);
+    animation-timing-function: none;
+    width: 0;
+    animation-delay: 2.9s;
+    overflow-x: hidden;
+    white-space: nowrap;
+  }
+  .titulo__paragraph3 {
+    animation: p3 1.2s forwards;
+    width: 0;
+    animation-timing-function: steps(200, jump-none);
+    animation-delay: 4.5s;
+    overflow-x: hidden;
+    white-space: nowrap;
+  }
+  @keyframes p1 {
+    from {
+      width: 0;
+    } to {
+      width: 29vw;
+    }
+  }
+  @keyframes p2 {
+    from {
+      width: 0;
+    } to {
+      width: 27vw;
+    }
+  }
+  @keyframes p3 {
+    from {
+      width: 0;
+    } to {
+      width: 15vw;
+    }
   }
   .video__div--desktop {
     position: absolute;
@@ -232,7 +280,7 @@
     display: block;
     left: 6.5rem;
     width: 60vw;
-    bottom: -32rem;
+    bottom: -28.2rem;
   }
   .video__desktop {
     display: block;
