@@ -217,10 +217,10 @@
   }
   .titulo__paragraph {
     text-align: justify;
-    height: 1.8vw;
+    height: 1.9vw;
     display: flex;
     align-items: center;
-    font-size: 1.4vw;
+    font-size: 1.5vw;
     overflow: hidden;
     word-wrap: break-word;
     line-height: 1.5rem;
@@ -257,21 +257,21 @@
     from {
       width: 0;
     } to {
-      width: 29vw;
+      width: 31vw;
     }
   }
   @keyframes p2 {
     from {
       width: 0;
     } to {
-      width: 27vw;
+      width: 29vw;
     }
   }
   @keyframes p3 {
     from {
       width: 0;
     } to {
-      width: 15vw;
+      width: 17vw;
     }
   }
   .video__div--desktop {
