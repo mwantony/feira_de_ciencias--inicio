@@ -4,7 +4,7 @@ export default function Downloads() {
   return (
     <section className={styles.downloads}>
       <div className={styles.downloads__area}>
-        <div className={styles.downloads__app}>
+        <div className={styles.downloads__content}>
           <h2 className={styles["downloads__title"]}>Aplicativo</h2>
           <a href="/" className={styles["downloads__link"]}>
             <button className={styles["downloads__button"]}>Download</button>
@@ -21,7 +21,7 @@ export default function Downloads() {
         </p>
       </div>
       <div className={styles.downloads__area}>
-        <div className={styles.downloads__planilha}>
+        <div className={styles.downloads__content}>
           <h2 className={styles["downloads__title"]}>Planilha</h2>
           <a href="/" className={styles["downloads__link"]}>
             <button className={styles["downloads__button"]}>Baixar</button>
@@ -33,7 +33,7 @@ export default function Downloads() {
         </p>
         <p className={styles["downloads__paragraph"]}>
           Na própria planilha terá a aba de Instruções para que você aprenda a
-          usa-la.
+          usá-la.
         </p>
       </div>
     </section>
