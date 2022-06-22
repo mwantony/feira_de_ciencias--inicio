@@ -2,7 +2,8 @@ import Rodape from "components/Rodape";
 import styles from "./Downloads.module.scss";
 import plani from "assets/img/desk-planilha.png";
 import classNames from "classnames";
-import qrcode from 'assets/img/qr_download.png'
+import qrcode from 'assets/img/qr_download.png';
+import logoDesktop from 'assets/img/logoarredondadamenor.png';
 export default function Downloads() {
   return (
     <section className={styles.downloads}>
@@ -47,6 +48,7 @@ export default function Downloads() {
             className={styles.img__desktop}
           />
         </div>
+        <img className={styles.logo__desktop} src={logoDesktop} alt="Logo do HiCash" />
       </header>
       <div className={styles.desktop}>
         <div className={styles.desktop__div}>

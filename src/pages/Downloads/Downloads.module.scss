@@ -51,6 +51,9 @@
 .desktop {
   display: none; 
 }
+.logo__desktop {
+  display: none;
+}
 
 @media(min-width: $media) {
   .cabecalho {
@@ -180,5 +183,12 @@
       margin-top: 3rem;
       width: 20vw;
     }
+  }
+  .logo__desktop {
+    width: 20vw;
+    left: 10vw;
+    bottom: 35vw;
+    position: absolute;
+    display: block;
   }
 }
