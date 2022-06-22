@@ -3,6 +3,9 @@
   width: 68vw;
   margin: 2.5rem auto;
 }
+.cabecalho {
+  display: none;
+}
 .downloads {
   &__content {
     margin: 2rem 2rem 2rem 0;
@@ -43,5 +46,139 @@
     font-weight: 400;
     text-shadow: 0px 2px 4px $text-shadow;
 
+  }
+}
+.desktop {
+  display: none; 
+}
+
+@media(min-width: $media) {
+  .cabecalho {
+    display: block;
+    min-height: calc(100vh - 50px);
+    z-index: -2;
+    &__div {
+      opacity: 0;
+      animation: aparecer 500ms forwards;
+      animation-delay: 6s;
+      position: absolute;
+      bottom: 17vw;
+      width: 16vw;
+      left: 10%;
+      display: block;
+      text-align: center;
+    }
+    &__baixar {
+      font-family: 'Nunito Sans';
+      font-weight: 800;
+      border-radius: 3px;
+      border: none;
+      padding: .5rem 1.5rem;
+      font-size: 1.5vw;
+      color: $tema-principal;
+      background-color: $negativo;
+      box-shadow: 0px 2px 4px $text-shadow;
+      text-shadow: 0px 2px 4px $text-shadow;
+    }
+  }
+  .titulo__desktop {
+    position: absolute;
+    bottom: 22vw;
+    width: 30vw;
+    left: 10%;
+    display: block;
+  }
+  .titulo__paragraph {
+    text-align: justify;
+    height: 1.9vw;
+    display: flex;
+    align-items: center;
+    font-size: 1.5vw;
+    overflow: hidden;
+    word-wrap: break-word;
+    line-height: 1.5rem;
+    color: $surface;
+    text-shadow: 0px 2px 4px $text-shadow;
+  }
+  .titulo__paragraph1 {
+    animation: p1 2s forwards;
+    animation-timing-function: steps(1000, jump-none);
+    animation-delay: 1s;
+    width: 0;
+    white-space: nowrap;
+    text-indent: 30px;
+    overflow-x: hidden;
+  }
+  .titulo__paragraph2 {
+    animation: p2 1.7s forwards;
+    animation-timing-function: steps(1000, jump-none);
+    animation-timing-function: none;
+    width: 0;
+    animation-delay: 2.9s;
+    overflow-x: hidden;
+    white-space: nowrap;
+  }
+  .titulo__paragraph3 {
+    animation: p3 1.2s forwards;
+    width: 0;
+    animation-timing-function: steps(1000, jump-none);
+    animation-delay: 4.5s;
+    overflow-x: hidden;
+    white-space: nowrap;
+  }
+  @keyframes p1 {
+    from {
+      width: 0;
+    } to {
+      width: 17vw;
+    }
+  }
+  @keyframes p2 {
+    from {
+      width: 0;
+    } to {
+      width: 16vw;
+    }
+  }
+  @keyframes p3 {
+    from {
+      width: 0;
+    } to {
+      width: 7vw;
+    }
+  }
+  @keyframes aparecer {
+    to {
+      opacity: 1;
+    }
+  }
+  .img__div--desktop {
+    position: absolute;
+    z-index: -2;
+    display: block;
+    right: 2rem;
+    width: 60vw;
+    bottom: 0;
+  }
+  .img__desktop {
+    display: block;
+    width: 100%;
+  }
+  .engloba {
+    display: none;
+  }
+  .desktop {
+    display: block;
+    text-align: center;
+    width: 100vw;
+    margin: 7rem 0 5rem 0;
+    &__paragraph {
+      color: $surface;
+      text-shadow: 0px 2px 4px $text-shadow;
+    }
+    &__qrcode {
+      margin-top: 3rem;
+      width: 20vw;
+    }
   }
 }

@@ -59,7 +59,7 @@ export default function Inicio() {
             </h3>
           </div>
           <div className={styles.planilha__divbotao}>
-            <Link to={"/downloads"}>
+            <Link to={'/downloads/'}>
               <button className={styles.baixar__planilha}>Baixar</button>
             </Link>
           </div>
