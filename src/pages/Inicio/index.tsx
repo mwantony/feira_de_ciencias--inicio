@@ -13,8 +13,17 @@ export default function Inicio({setSelecionado}: Props) {
     <main>
       <header className={styles.cabecalho}>
         <div className={styles.cabecalho__div}>
-          <h2 className={styles["cabecalho__titulo--mobile"]}>
-            Baixe o aplicativo para celular
+          <h2 className={classNames({
+            [styles["cabecalho__titulo--mobile"]]: true,
+            [styles.mobile1]: true
+          })}>
+            Baixe o aplicativo
+          </h2>
+          <h2 className={classNames({
+            [styles["cabecalho__titulo--mobile"]]: true,
+            [styles.mobile2]: true
+          })}>
+            para celular
           </h2>
           <div className={styles.botaoaplicativo__div}>
             <Link to={"/downloads"}>

@@ -22,6 +22,34 @@
     text-shadow: 0px 2px 4px $text-shadow;
   }
 }
+
+.mobile1 {
+  width: 0;
+  display: block;
+  margin: 0 auto;
+  animation: mobileEffect forwards 1.5s;
+  animation-timing-function: steps(1000, jump-none);
+  animation-delay: 1s;
+  white-space: nowrap;
+  overflow-x: hidden;
+}
+.mobile2 {
+  width: 0;
+  display: block;
+  margin: 0 auto;
+  animation: mobileEffect forwards 1.5s;
+  animation-timing-function: steps(1000, jump-none);
+  animation-delay: 2.3s;
+  white-space: nowrap;
+  overflow-x: hidden;
+}
+
+@keyframes mobileEffect {
+  to {
+    width: 200px;
+  }
+}
+
 .botaoaplicativo__div {
   margin: 2rem auto;
   width: 120px;
@@ -34,10 +62,18 @@
   padding: .6rem 1.2rem;
   background-color: $negativo;
   border: none;
+  opacity: 0;
+  animation: aparecer 500ms forwards;
+  animation-delay: 3.5s;
   border-radius: 2px;
   font-weight: 800;
   color: $tema-principal;
   box-shadow: 0px 2px 4px $text-shadow;
+}
+@keyframes aparecer {
+  to {
+    opacity: 1;
+  }
 }
 .titulo__desktop {
   display: none;
@@ -81,8 +117,12 @@
 
 .video__mobile {
   display: block;
+  opacity: 0;
+  animation: aparecer 1s forwards;
+  animation-delay: 4s;
   position: absolute;
   z-index: -2;
+
   width: 100%;
 }
 .video__div--desktop {
@@ -114,12 +154,14 @@
 }
 
 .porqueusar {
-  padding: 2rem 1rem;
+  padding: 4rem 1rem;
   width: 80%;
   margin: 0 auto;
   &__titulo {
     color: $positivo;
+    text-align: center;
     font-size: 1.1rem;
+    margin-bottom: 2rem;
     text-shadow: 0px 2px 4px $text-shadow;
 
   }
@@ -276,6 +318,7 @@
     width: 50%;
     &__titulo {
       font-size: 1.7rem;
+      text-align: left;
     }
     &__paragraph {
       font-size: 1.2rem;
