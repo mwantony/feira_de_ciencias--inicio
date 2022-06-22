@@ -297,6 +297,9 @@
     left: 6.5rem;
     width: 60vw;
     bottom: -32.5rem;
+    opacity: 0;
+    animation: aparecer 500ms forwards;
+    animation-delay: 500ms;
   }
   .video__desktop {
     display: block;

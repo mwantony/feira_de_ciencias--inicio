@@ -170,6 +170,9 @@
     right: 2rem;
     width: 60vw;
     bottom: 0;
+    opacity: 0;
+    animation: aparecer 500ms forwards;
+    animation-delay: 500ms;
   }
   .img__desktop {
     display: block;
