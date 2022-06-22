@@ -1,9 +1,9 @@
 @import 'styles/_variaveis.scss';
-
+.engloba {
+  width: 68vw;
+  margin: 2.5rem auto;
+}
 .downloads {
-  width: 67vw;
-  padding-top: 1rem;
-  margin: 0 auto;
   &__content {
     margin: 2rem 2rem 2rem 0;
     display: flex;
