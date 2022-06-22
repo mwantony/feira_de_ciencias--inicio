@@ -4,6 +4,7 @@ import plani from "assets/img/desk-planilha.png";
 import classNames from "classnames";
 import qrcode from 'assets/img/qr_download.png';
 import logoDesktop from 'assets/img/logoarredondadamenor.png';
+
 export default function Downloads() {
   return (
     <section className={styles.downloads}>

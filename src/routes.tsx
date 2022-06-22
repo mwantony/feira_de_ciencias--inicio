@@ -9,7 +9,7 @@ export default function AppRouter() {
     <BrowserRouter>
       <Cabecalho selecionado={selecionado} setSelecionado={setSelecionado}></Cabecalho>
       <Routes>
-        <Route path="/" element={<Inicio></Inicio>}></Route>
+        <Route path="/" element={<Inicio setSelecionado={setSelecionado}></Inicio>}></Route>
         <Route path="/downloads/" element={<Downloads></Downloads>}></Route>
       </Routes>
     </BrowserRouter>

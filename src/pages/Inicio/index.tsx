@@ -5,7 +5,10 @@ import videoMobile from "assets/vid/vidmobile.mp4";
 import videoDesktop from "assets/vid/viddesktop.mp4";
 import classNames from "classnames";
 import Rodape from "components/Rodape";
-export default function Inicio() {
+interface Props {
+  setSelecionado: React.Dispatch<React.SetStateAction<number>>
+}
+export default function Inicio({setSelecionado}: Props) {
   return (
     <main>
       <header className={styles.cabecalho}>
@@ -15,7 +18,7 @@ export default function Inicio() {
           </h2>
           <div className={styles.botaoaplicativo__div}>
             <Link to={"/downloads"}>
-              <button className={styles.baixar__aplicativo}>Download</button>
+              <button onClick={() => setSelecionado(2)} className={styles.baixar__aplicativo}>Download</button>
             </Link>
           </div>
           <div className={styles["video__div--mobile"]}>
@@ -60,7 +63,7 @@ export default function Inicio() {
           </div>
           <div className={styles.planilha__divbotao}>
             <Link to={'/downloads/'}>
-              <button className={styles.baixar__planilha}>Baixar</button>
+              <button onClick={() => setSelecionado(2)} className={styles.baixar__planilha}>Baixar</button>
             </Link>
           </div>
         </section>
