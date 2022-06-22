@@ -135,36 +135,7 @@
   }
 }
 
-.rodape {
-  background-image: url('../../assets/img/background-bottom--mobile.png');
-  background-repeat: no-repeat;
-  background-position: bottom;
-  min-height: 226px;
-  height: 60vw;
-  background-size: 100%;
-  &__content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    left: 50%;
-    margin-top: 20%;
-    height: 20%;
-    text-align: center;
-    transform: translate(-50%);
-    position: absolute;
-    width: 70%;
-  }
-  &__imagem {
-    width: 30%;
-  }
-  &__paragraph {
-    font-size: 14px;
-    font-weight: 400;
-    color: $tema-principal;
-    text-shadow: 0px 2px 4px $text-shadow;
-  }
-}
+
 
 @media(min-width: $media550) {
 
@@ -186,12 +157,7 @@
       font-size: 1rem;
     }
   }
-  .rodape {
-    &__content {
-      margin-top: 15%;
-      height: 30%;
-    }
-  }
+
   .baixar__planilha {
     font-size: 1.3rem;
     border-radius: 5px;
@@ -316,29 +282,6 @@
       line-height: 2rem;
     }
   }
-  .rodape {
-    background-image: url('../../assets/img/background-bottom-desktop.png');
-    background-position: 0% 250%;
-    height: 30vw;
-    &__content {
-      height: 20%;
-      margin-top: 12vw;
-      flex-direction: row;
-    }
-    &__imagem {
-      width: 20%
-    }
-    &__paragraph {
-      font-size: 16px;
-      width: 40%;
-    }
-  }
+
 }
 
-@media(min-width: 1025px) {
-  .rodape {
-    &__content {
-      margin-top: 15vw;
-    }
-  }
-}

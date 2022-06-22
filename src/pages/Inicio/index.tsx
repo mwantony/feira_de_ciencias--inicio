@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
 import styles from "./Inicio.module.scss";
-import logorodape from "assets/img/logoarredondadamenor.png";
 import logoDesktop from 'assets/img/logoarredondadamenor.png'
 import videoMobile from "assets/vid/vidmobile.mp4";
 import videoDesktop from "assets/vid/viddesktop.mp4";
 import classNames from "classnames";
+import Rodape from "components/Rodape";
 export default function Inicio() {
   return (
     <main>
@@ -77,18 +77,7 @@ export default function Inicio() {
             nossa planilha.
           </p>
         </section>
-        <footer className={styles.rodape}>
-          <figure className={styles.rodape__content}>
-            <img
-              className={styles.rodape__imagem}
-              src={logorodape}
-              alt="Logo HiCash"
-            />
-            <p className={styles.rodape__paragraph}>
-              Criado como projeto da Feira de Ciências 2022
-            </p>
-          </figure>
-        </footer>
+        <Rodape></Rodape>
       </div>
     </main>
   );
