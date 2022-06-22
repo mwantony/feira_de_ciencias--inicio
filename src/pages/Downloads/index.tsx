@@ -36,7 +36,7 @@ export default function Downloads() {
             </p>
           </div>
           <div className={styles.cabecalho__div}>
-            <a href="/" className={styles.link}>
+            <a href="https://github.com/mwantony/feira_de_ciencias/raw/main/app/planilha/Planilha%20de%20Gastos.xlsx" rel="noreferrer" target='_blank' className={styles.link}>
               <button className={styles.cabecalho__baixar}>Baixar</button>
             </a>
           </div>
@@ -60,7 +60,7 @@ export default function Downloads() {
         <div className={styles.downloads__area}>
           <div className={styles.downloads__content}>
             <h2 className={styles["downloads__title"]}>Aplicativo</h2>
-            <a href="/" className={styles["downloads__link"]}>
+            <a href="https://github.com/mwantony/feira_de_ciencias/raw/main/app/hicash.apk" rel="noreferrer" target='_blank' className={styles["downloads__link"]}>
               <button className={styles["downloads__button"]}>Download</button>
             </a>
           </div>
@@ -77,13 +77,13 @@ export default function Downloads() {
         <div className={styles.downloads__area}>
           <div className={styles.downloads__content}>
             <h2 className={styles["downloads__title"]}>Planilha</h2>
-            <a href="/" className={styles["downloads__link"]}>
+            <a href="https://github.com/mwantony/feira_de_ciencias/raw/main/app/planilha/Planilha%20de%20Gastos.xlsx" rel="noreferrer" target='_blank' className={styles["downloads__link"]}>
               <button className={styles["downloads__button"]}>Baixar</button>
             </a>
           </div>
           <h3 className={styles.downloads__subtitle}>Como usá-la?</h3>
           <p className={styles["downloads__paragraph"]}>
-            Recomendamos que use o Microsoft Excel para abrir o arquivo .xlss.
+            Recomendamos que use o Microsoft Excel para abrir o arquivo .xlsx.
           </p>
           <p className={styles["downloads__paragraph"]}>
             Na própria planilha terá a aba de Instruções para que você aprenda a
