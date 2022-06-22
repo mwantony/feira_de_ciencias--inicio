@@ -1,3 +1,4 @@
+import Rodape from "components/Rodape";
 import styles from "./Downloads.module.scss";
 
 export default function Downloads() {
