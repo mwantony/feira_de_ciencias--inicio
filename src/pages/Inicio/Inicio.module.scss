@@ -206,6 +206,14 @@
   }
 }
 @media(min-width: $media) {
+  .botao {
+    transition-duration: 500ms;
+  }
+  .botao:hover {
+    opacity: .6;
+    transform: scale(1.1);
+    cursor: pointer;
+  }
   .cabecalho {
     height: calc(100vh - 50px);
     &__titulo--mobile, .baixar__aplicativo, .video__mobile, .video__div--mobile {

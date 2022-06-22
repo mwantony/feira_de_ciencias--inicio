@@ -27,7 +27,9 @@ export default function Inicio({setSelecionado}: Props) {
           </h2>
           <div className={styles.botaoaplicativo__div}>
             <Link to={"/downloads"}>
-              <button onClick={() => setSelecionado(2)} className={styles.baixar__aplicativo}>Download</button>
+              <button onClick={() => setSelecionado(2)} className={classNames({
+                [styles.baixar__aplicativo]: true,
+              })}>Download</button>
             </Link>
           </div>
           <div className={styles["video__div--mobile"]}>
@@ -72,7 +74,10 @@ export default function Inicio({setSelecionado}: Props) {
           </div>
           <div className={styles.planilha__divbotao}>
             <Link to={'/downloads/'}>
-              <button onClick={() => setSelecionado(2)} className={styles.baixar__planilha}>Baixar</button>
+              <button onClick={() => setSelecionado(2)} className={classNames({
+                [styles.baixar__planilha]: true,
+                [styles.botao]: true
+              })}>Baixar</button>
             </Link>
           </div>
         </section>

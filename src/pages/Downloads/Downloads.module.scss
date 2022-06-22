@@ -56,6 +56,14 @@
 }
 
 @media(min-width: $media) {
+  .botao {
+    transition-duration: 500ms;
+    &:hover {
+      opacity: .6;
+      transform: scale(1.1);
+      cursor: pointer;
+    }
+  }
   .cabecalho {
     display: block;
     min-height: calc(100vh - 50px);

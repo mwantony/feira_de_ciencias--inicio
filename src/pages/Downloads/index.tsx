@@ -38,7 +38,10 @@ export default function Downloads() {
           </div>
           <div className={styles.cabecalho__div}>
             <a href="https://github.com/mwantony/feira_de_ciencias/raw/main/app/planilha/Planilha%20de%20Gastos.xlsx" rel="noreferrer" target='_blank' className={styles.link}>
-              <button className={styles.cabecalho__baixar}>Baixar</button>
+              <button className={classNames({
+                [styles.cabecalho__baixar]:true,
+                [styles.botao]: true
+              })}>Baixar</button>
             </a>
           </div>
         </div>
