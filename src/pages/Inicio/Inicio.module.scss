@@ -244,7 +244,7 @@
     text-shadow: 0px 2px 4px $text-shadow;
   }
   .titulo__paragraph1 {
-    animation: p1 2s forwards;
+    animation: p1 1.5s forwards;
     animation-timing-function: steps(1000, jump-none);
     animation-delay: 1s;
     width: 0;
@@ -257,15 +257,15 @@
     animation-timing-function: steps(1000, jump-none);
     animation-timing-function: none;
     width: 0;
-    animation-delay: 2.9s;
+    animation-delay: 2.4s;
     overflow-x: hidden;
     white-space: nowrap;
   }
   .titulo__paragraph3 {
-    animation: p3 1.2s forwards;
+    animation: p3 1s forwards;
     width: 0;
     animation-timing-function: steps(1000, jump-none);
-    animation-delay: 4.5s;
+    animation-delay: 4s;
     overflow-x: hidden;
     white-space: nowrap;
   }
@@ -328,11 +328,11 @@
     padding: 5rem;
     width: 50%;
     &__titulo {
-      font-size: 1.7rem;
+      font-size: 1.5rem;
       text-align: left;
     }
     &__paragraph {
-      font-size: 1.2rem;
+      font-size: 1.1rem;
       line-height: 2rem;
     }
   }

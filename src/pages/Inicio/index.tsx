@@ -73,12 +73,12 @@ export default function Inicio({setSelecionado}: Props) {
             </h3>
           </div>
           <div className={styles.planilha__divbotao}>
-            <Link to={'/downloads/'}>
+            <a target="_blank" rel="noreferrer" href={'https://github.com/mwantony/feira_de_ciencias/raw/main/app/planilha/Planilha%20de%20Gastos.xlsx'}>
               <button onClick={() => setSelecionado(2)} className={classNames({
                 [styles.baixar__planilha]: true,
                 [styles.botao]: true
               })}>Baixar</button>
-            </Link>
+            </a>
           </div>
         </section>
         <section className={styles.porqueusar}>
